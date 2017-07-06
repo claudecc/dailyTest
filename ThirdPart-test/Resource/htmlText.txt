@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<form id="submitPay" name="submitPay" action="http://api.shkyun.com/gateway" method="post">
+<input type="hidden" name="return_url" value="honglu://www.honglu.com/native?name=recharge&type_code=LX_CO&index=2" />
+<input type="hidden" name="notify_url" value="https://lxwp.zjcomex.com/PassPay/Callback" />
+<input type="hidden" name="appid" value="15374" />
+<input type="hidden" name="out_trade_no" value="000000000000000000000000509136" />
+<input type="hidden" name="subject" value="充值" />
+<input type="hidden" name="total_fee" value="10" />
+<input type="hidden" name="paytype" value="" />
+<input type="hidden" name="partnerUserId" value="18742030206" />
+<input type="hidden" name="sign" value="63c769b4a52889d297a63af0ec287939" />
+</form>
+</body>
+<script>document.forms['submitPay'].submit();</script>
+</html>
