@@ -26,7 +26,15 @@
     [super viewWillAppear:animated];
     ScaleScrollView *view = [[ScaleScrollView alloc] init];
     view.dataArray = @[@1,@2,@3,@4,@5];
-    
+    [AlertManager popAlert:view withName:@"scaleScrollView"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [AlertManager popAlert:view withName:@"scaleScrollView"];
+    });
+    ScaleScrollView *view2 = [[ScaleScrollView alloc] init];
+    view2.dataArray = @[@1,@2,@3];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [AlertManager insertAlert:view2 withName:@"scaleScrollView2"];
+    });
 }
 
 - (void)didReceiveMemoryWarning {

@@ -20,6 +20,7 @@
 #import "YYText.h"
 #import "YYImage.h"
 #import "UIView+MyFrame.h"
+#import "AlertManager.h"
 
 #endif
 

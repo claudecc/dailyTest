@@ -84,7 +84,7 @@
         [viewArr addObject:view];
         if (!i) {
             CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-            animation.fromValue = @(1);
+            animation.fromValue = @(1.2);
             animation.toValue = @(1.2);
             animation.removedOnCompletion = NO;
             animation.fillMode = @"forwards";
@@ -106,9 +106,7 @@
     if (dataArray.count > 0) {
         [self reloadUI];
     }
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    self.frame = window.bounds;
-    [window addSubview:self];
+//    [AlertManager popAlert:self withName:@"scaleScrollView"];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -153,6 +151,10 @@
             
         }
     }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
 }
 
 - (void)cellClick:(UITapGestureRecognizer *)tap {
