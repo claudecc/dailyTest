@@ -29,6 +29,8 @@
 		CB4232B54C734B1508622ABA /* libPods-ThirdPart-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FC9F8E64CD8B34D8DC968C /* libPods-ThirdPart-test.a */; };
 		E6FD46191F1BBF27000A1772 /* BarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FD46181F1BBF27000A1772 /* BarrageView.m */; };
 		E6FD461C1F1BBF3F000A1772 /* BarrageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FD461B1F1BBF3F000A1772 /* BarrageVC.m */; };
+		E6FD461F1F1BC93A000A1772 /* REVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FD461E1F1BC93A000A1772 /* REVC.m */; };
+		E6FD46221F1BC985000A1772 /* RERankingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FD46211F1BC985000A1772 /* RERankingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,10 @@
 		E6FD46181F1BBF27000A1772 /* BarrageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BarrageView.m; path = "ThirdPart-test/Classes/Home/Controller/BarrageView.m"; sourceTree = SOURCE_ROOT; };
 		E6FD461A1F1BBF3F000A1772 /* BarrageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageVC.h; sourceTree = "<group>"; };
 		E6FD461B1F1BBF3F000A1772 /* BarrageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageVC.m; sourceTree = "<group>"; };
+		E6FD461D1F1BC93A000A1772 /* REVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REVC.h; sourceTree = "<group>"; };
+		E6FD461E1F1BC93A000A1772 /* REVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REVC.m; sourceTree = "<group>"; };
+		E6FD46201F1BC985000A1772 /* RERankingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RERankingView.h; path = "ThirdPart-test/Classes/Home/Controller/RERankingView.h"; sourceTree = SOURCE_ROOT; };
+		E6FD46211F1BC985000A1772 /* RERankingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RERankingView.m; path = "ThirdPart-test/Classes/Home/Controller/RERankingView.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +204,8 @@
 				05D9C25C1EFD0A8400F683B2 /* HomeVC.m */,
 				E6FD461A1F1BBF3F000A1772 /* BarrageVC.h */,
 				E6FD461B1F1BBF3F000A1772 /* BarrageVC.m */,
+				E6FD461D1F1BC93A000A1772 /* REVC.h */,
+				E6FD461E1F1BC93A000A1772 /* REVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +222,8 @@
 			children = (
 				E6FD46171F1BBF27000A1772 /* BarrageView.h */,
 				E6FD46181F1BBF27000A1772 /* BarrageView.m */,
+				E6FD46201F1BC985000A1772 /* RERankingView.h */,
+				E6FD46211F1BC985000A1772 /* RERankingView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,6 +506,7 @@
 				054FD9EC1F0EBE6A00680CC8 /* ScaleScrollView.m in Sources */,
 				05D9C2601EFD0A9600F683B2 /* MeVC.m in Sources */,
 				054FD9CE1F06741E00680CC8 /* UIView+MyFrame.m in Sources */,
+				E6FD461F1F1BC93A000A1772 /* REVC.m in Sources */,
 				E6FD46191F1BBF27000A1772 /* BarrageView.m in Sources */,
 				05D9C22A1EFCFCC100F683B2 /* AppDelegate.m in Sources */,
 				05D9C2271EFCFCC100F683B2 /* main.m in Sources */,
@@ -504,6 +515,7 @@
 				054FD9DD1F07945000680CC8 /* UIView+RectCorner.m in Sources */,
 				05D9C25A1EFD0A4900F683B2 /* MyTool.m in Sources */,
 				05D9C2631EFD0B1000F683B2 /* MyTabBarVC.m in Sources */,
+				E6FD46221F1BC985000A1772 /* RERankingView.m in Sources */,
 				054FD9E91F0EBE2C00680CC8 /* OtherVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

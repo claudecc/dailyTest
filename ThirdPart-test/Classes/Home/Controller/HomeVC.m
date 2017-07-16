@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.navigationItem.title = @"Home";
     if ([self respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
@@ -67,7 +67,7 @@
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[@"BarrageVC"];
+        _dataArray = @[@"BarrageVC",@"REVC"];
     }
     return _dataArray;
 }
