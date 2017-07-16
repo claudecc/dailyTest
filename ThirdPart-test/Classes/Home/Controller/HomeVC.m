@@ -9,8 +9,9 @@
 #import "HomeVC.h"
 #import "UIImage+GIF.h"
 
-@interface HomeVC ()<YYTextViewDelegate>
-
+@interface HomeVC ()<YYTextViewDelegate,UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *dataArray;
 @end
 
 @implementation HomeVC
@@ -23,7 +24,52 @@
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
     
-    [self setupAnimation];
+    [self setup];
+}
+
+- (void)setup {
+    self.tableView.backgroundColor = [UIColor whiteColor];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"home_cell_id"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"home_cell_id"];
+    }
+    cell.textLabel.text = self.dataArray[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    Class class = NSClassFromString(self.dataArray[indexPath.row]);
+    if (!class) {
+        return;
+    }
+    UIViewController *vc = [[class alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [self.view addSubview:_tableView];
+    }
+    return _tableView;
+}
+
+- (NSArray *)dataArray {
+    if (!_dataArray) {
+        _dataArray = @[@"BarrageVC"];
+    }
+    return _dataArray;
 }
 
 - (void)setupAnimation {

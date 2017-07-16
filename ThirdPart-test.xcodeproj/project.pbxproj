@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		050D3B2B1F18B25B00E0A9E1 /* BarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D3B2A1F18B25B00E0A9E1 /* BarrageView.m */; };
 		050D3B2D1F18D73900E0A9E1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050D3B2C1F18D73900E0A9E1 /* AdSupport.framework */; };
 		052992E71F147D22003488C2 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 052992E61F147D22003488C2 /* AlertManager.m */; };
 		054FD9B61F033FA300680CC8 /* little_boy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 054FD9B51F033FA300680CC8 /* little_boy.gif */; };
@@ -28,11 +27,11 @@
 		05D9C2631EFD0B1000F683B2 /* MyTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D9C2621EFD0B1000F683B2 /* MyTabBarVC.m */; };
 		05D9C2661EFD0B9100F683B2 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D9C2651EFD0B9100F683B2 /* BaseNavigationVC.m */; };
 		CB4232B54C734B1508622ABA /* libPods-ThirdPart-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FC9F8E64CD8B34D8DC968C /* libPods-ThirdPart-test.a */; };
+		E6FD46191F1BBF27000A1772 /* BarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FD46181F1BBF27000A1772 /* BarrageView.m */; };
+		E6FD461C1F1BBF3F000A1772 /* BarrageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FD461B1F1BBF3F000A1772 /* BarrageVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		050D3B291F18B25B00E0A9E1 /* BarrageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageView.h; sourceTree = "<group>"; };
-		050D3B2A1F18B25B00E0A9E1 /* BarrageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageView.m; sourceTree = "<group>"; };
 		050D3B2C1F18D73900E0A9E1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		052992E51F147D22003488C2 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
 		052992E61F147D22003488C2 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
@@ -73,6 +72,10 @@
 		8DE18BFB3B2FD84195C5D808 /* Pods-ThirdPart-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdPart-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdPart-test/Pods-ThirdPart-test.debug.xcconfig"; sourceTree = "<group>"; };
 		B8FC9F8E64CD8B34D8DC968C /* libPods-ThirdPart-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirdPart-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C35CDA0C9F5965669191A3 /* Pods-ThirdPart-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirdPart-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThirdPart-test/Pods-ThirdPart-test.release.xcconfig"; sourceTree = "<group>"; };
+		E6FD46171F1BBF27000A1772 /* BarrageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BarrageView.h; path = "ThirdPart-test/Classes/Home/Controller/BarrageView.h"; sourceTree = SOURCE_ROOT; };
+		E6FD46181F1BBF27000A1772 /* BarrageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BarrageView.m; path = "ThirdPart-test/Classes/Home/Controller/BarrageView.m"; sourceTree = SOURCE_ROOT; };
+		E6FD461A1F1BBF3F000A1772 /* BarrageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageVC.h; sourceTree = "<group>"; };
+		E6FD461B1F1BBF3F000A1772 /* BarrageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +196,8 @@
 			children = (
 				05D9C25B1EFD0A8400F683B2 /* HomeVC.h */,
 				05D9C25C1EFD0A8400F683B2 /* HomeVC.m */,
+				E6FD461A1F1BBF3F000A1772 /* BarrageVC.h */,
+				E6FD461B1F1BBF3F000A1772 /* BarrageVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +212,8 @@
 		05D9C2441EFD084400F683B2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E6FD46171F1BBF27000A1772 /* BarrageView.h */,
+				E6FD46181F1BBF27000A1772 /* BarrageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,8 +247,6 @@
 		05D9C2481EFD084400F683B2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				050D3B291F18B25B00E0A9E1 /* BarrageView.h */,
-				050D3B2A1F18B25B00E0A9E1 /* BarrageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -484,13 +489,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050D3B2B1F18B25B00E0A9E1 /* BarrageView.m in Sources */,
+				E6FD461C1F1BBF3F000A1772 /* BarrageVC.m in Sources */,
 				05D9C2571EFD0A1900F683B2 /* BaseViewController.m in Sources */,
 				05D9C2661EFD0B9100F683B2 /* BaseNavigationVC.m in Sources */,
 				05D9C25D1EFD0A8400F683B2 /* HomeVC.m in Sources */,
 				054FD9EC1F0EBE6A00680CC8 /* ScaleScrollView.m in Sources */,
 				05D9C2601EFD0A9600F683B2 /* MeVC.m in Sources */,
 				054FD9CE1F06741E00680CC8 /* UIView+MyFrame.m in Sources */,
+				E6FD46191F1BBF27000A1772 /* BarrageView.m in Sources */,
 				05D9C22A1EFCFCC100F683B2 /* AppDelegate.m in Sources */,
 				05D9C2271EFCFCC100F683B2 /* main.m in Sources */,
 				052992E71F147D22003488C2 /* AlertManager.m in Sources */,
