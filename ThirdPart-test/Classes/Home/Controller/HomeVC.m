@@ -67,7 +67,7 @@
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[@"BarrageVC",@"REVC"];
+        _dataArray = @[@"BarrageVC",@"REVC",@"HomeAnimateVC"];
     }
     return _dataArray;
 }

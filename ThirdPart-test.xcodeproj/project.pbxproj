@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		050D3B2D1F18D73900E0A9E1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050D3B2C1F18D73900E0A9E1 /* AdSupport.framework */; };
 		052992E71F147D22003488C2 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 052992E61F147D22003488C2 /* AlertManager.m */; };
+		0529A4FB1F2B398F00D2E53B /* HomeAnimateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529A4FA1F2B398F00D2E53B /* HomeAnimateVC.m */; };
 		054FD9B61F033FA300680CC8 /* little_boy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 054FD9B51F033FA300680CC8 /* little_boy.gif */; };
 		054FD9B81F0352C300680CC8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 054FD9B71F0352C300680CC8 /* Default-568h@2x.png */; };
 		054FD9BB1F035B4F00680CC8 /* UIImage+RenderedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 054FD9BA1F035B4F00680CC8 /* UIImage+RenderedImage.m */; };
@@ -37,6 +38,8 @@
 		050D3B2C1F18D73900E0A9E1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		052992E51F147D22003488C2 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
 		052992E61F147D22003488C2 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
+		0529A4F91F2B398F00D2E53B /* HomeAnimateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeAnimateVC.h; sourceTree = "<group>"; };
+		0529A4FA1F2B398F00D2E53B /* HomeAnimateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeAnimateVC.m; sourceTree = "<group>"; };
 		054FD9B51F033FA300680CC8 /* little_boy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = little_boy.gif; sourceTree = "<group>"; };
 		054FD9B71F0352C300680CC8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		054FD9B91F035B4F00680CC8 /* UIImage+RenderedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RenderedImage.h"; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 				E6FD461B1F1BBF3F000A1772 /* BarrageVC.m */,
 				E6FD461D1F1BC93A000A1772 /* REVC.h */,
 				E6FD461E1F1BC93A000A1772 /* REVC.m */,
+				0529A4F91F2B398F00D2E53B /* HomeAnimateVC.h */,
+				0529A4FA1F2B398F00D2E53B /* HomeAnimateVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -517,6 +522,7 @@
 				05D9C2631EFD0B1000F683B2 /* MyTabBarVC.m in Sources */,
 				E6FD46221F1BC985000A1772 /* RERankingView.m in Sources */,
 				054FD9E91F0EBE2C00680CC8 /* OtherVC.m in Sources */,
+				0529A4FB1F2B398F00D2E53B /* HomeAnimateVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
