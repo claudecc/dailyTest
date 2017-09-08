@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"Animate";
     
-    [self layerTest2];
+    [self createSegView];
 }
 
 - (void)layerTest {
@@ -66,6 +66,18 @@
     [self.view.layer addSublayer:layer1];
     [self.view.layer addSublayer:layer2];
     [self.view.layer addSublayer:layer3];
+}
+
+- (void)createSegView {
+    UISegmentedControl *seg = [[UISegmentedControl alloc] initWithItems:@[@"1",@"2",@"3",@"4"]];
+    seg.frame = CGRectMake(0, 0, SCREEN_WIDTH, 50);
+    [self.view addSubview:seg];
+    [seg addTarget:self action:@selector(segClick:) forControlEvents:UIControlEventValueChanged];
+    
+}
+
+- (void)segClick:(UISegmentedControl *)seg {
+    
 }
 
 @end
