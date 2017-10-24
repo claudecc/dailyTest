@@ -10,5 +10,6 @@ target 'ThirdPart-test' do
 	pod 'RegexKitLite'
 	pod 'YYText'
 	pod 'YYImage'
+        pod 'MJRefresh'
 end
 
