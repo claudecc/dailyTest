@@ -100,6 +100,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A6A8C31F9F227E00ECA60C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05A6A8C41F9F238000ECA60C /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				05A6A8C51F9F238000ECA60C /* Controller */,
+				05A6A8D21F9F238000ECA60C /* Model */,
+				05A6A8D31F9F238000ECA60C /* View */,
+			);
+			name = Circle;
+			path = "ThirdPart-test/Classes/Circle";
+			sourceTree = SOURCE_ROOT;
+		};
+		05A6A8C51F9F238000ECA60C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		05A6A8D21F9F238000ECA60C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		05A6A8D31F9F238000ECA60C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		05D9C2191EFCFCC000F683B2 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +187,7 @@
 				05D9C23D1EFD084400F683B2 /* Base */,
 				05D9C2411EFD084400F683B2 /* Home */,
 				05D9C2451EFD084400F683B2 /* Me */,
+				05A6A8C41F9F238000ECA60C /* Circle */,
 				05D9C2491EFD084400F683B2 /* Other */,
 			);
 			path = Classes;
@@ -238,7 +278,7 @@
 			children = (
 				05D9C2461EFD084400F683B2 /* Controller */,
 				05D9C2471EFD084400F683B2 /* Model */,
-				05D9C2481EFD084400F683B2 /* View */,
+				05A6A8C31F9F227E00ECA60C /* View */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -257,13 +297,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		05D9C2481EFD084400F683B2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		05D9C2491EFD084400F683B2 /* Other */ = {
