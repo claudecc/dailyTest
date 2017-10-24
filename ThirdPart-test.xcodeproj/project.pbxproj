@@ -18,6 +18,17 @@
 		054FD9DD1F07945000680CC8 /* UIView+RectCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 054FD9DC1F07945000680CC8 /* UIView+RectCorner.m */; };
 		054FD9E91F0EBE2C00680CC8 /* OtherVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 054FD9E81F0EBE2C00680CC8 /* OtherVC.m */; };
 		054FD9EC1F0EBE6A00680CC8 /* ScaleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 054FD9EB1F0EBE6A00680CC8 /* ScaleScrollView.m */; };
+		05A6A8DC1F9F245F00ECA60C /* CircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8DB1F9F245F00ECA60C /* CircleVC.m */; };
+		05A6A8DF1F9F247900ECA60C /* PersonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8DE1F9F247900ECA60C /* PersonVC.m */; };
+		05A6A8E21F9F252100ECA60C /* PersonHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8E11F9F252100ECA60C /* PersonHeader.m */; };
+		05A6A8E51F9F255300ECA60C /* PersonNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8E41F9F255300ECA60C /* PersonNormalCell.m */; };
+		05A6A8EB1F9F266600ECA60C /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8EA1F9F266600ECA60C /* BaseTableView.m */; };
+		05A6A8F81F9F278300ECA60C /* MDUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8EE1F9F278200ECA60C /* MDUrl.m */; };
+		05A6A8F91F9F278300ECA60C /* SchemeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8F11F9F278200ECA60C /* SchemeHandler.m */; };
+		05A6A8FA1F9F278300ECA60C /* UtilTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8F31F9F278200ECA60C /* UtilTool.m */; };
+		05A6A8FB1F9F278300ECA60C /* VCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8F51F9F278200ECA60C /* VCManager.m */; };
+		05A6A8FC1F9F278300ECA60C /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8F71F9F278200ECA60C /* WebController.m */; };
+		05A6A8FF1F9F29E800ECA60C /* UserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8FE1F9F29E800ECA60C /* UserAgent.m */; };
 		05D9C2271EFCFCC100F683B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D9C2261EFCFCC100F683B2 /* main.m */; };
 		05D9C22A1EFCFCC100F683B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D9C2291EFCFCC100F683B2 /* AppDelegate.m */; };
 		05D9C2321EFCFCC200F683B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D9C2311EFCFCC200F683B2 /* Assets.xcassets */; };
@@ -53,6 +64,29 @@
 		054FD9E81F0EBE2C00680CC8 /* OtherVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherVC.m; sourceTree = "<group>"; };
 		054FD9EA1F0EBE6A00680CC8 /* ScaleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleScrollView.h; sourceTree = "<group>"; };
 		054FD9EB1F0EBE6A00680CC8 /* ScaleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleScrollView.m; sourceTree = "<group>"; };
+		05A6A8DA1F9F245F00ECA60C /* CircleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleVC.h; sourceTree = "<group>"; };
+		05A6A8DB1F9F245F00ECA60C /* CircleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleVC.m; sourceTree = "<group>"; };
+		05A6A8DD1F9F247900ECA60C /* PersonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonVC.h; sourceTree = "<group>"; };
+		05A6A8DE1F9F247900ECA60C /* PersonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonVC.m; sourceTree = "<group>"; };
+		05A6A8E01F9F252100ECA60C /* PersonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonHeader.h; sourceTree = "<group>"; };
+		05A6A8E11F9F252100ECA60C /* PersonHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonHeader.m; sourceTree = "<group>"; };
+		05A6A8E31F9F255300ECA60C /* PersonNormalCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonNormalCell.h; sourceTree = "<group>"; };
+		05A6A8E41F9F255300ECA60C /* PersonNormalCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonNormalCell.m; sourceTree = "<group>"; };
+		05A6A8E91F9F266600ECA60C /* BaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		05A6A8EA1F9F266600ECA60C /* BaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
+		05A6A8ED1F9F278200ECA60C /* MDUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDUrl.h; sourceTree = "<group>"; };
+		05A6A8EE1F9F278200ECA60C /* MDUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDUrl.m; sourceTree = "<group>"; };
+		05A6A8EF1F9F278200ECA60C /* SchemeDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchemeDefine.h; sourceTree = "<group>"; };
+		05A6A8F01F9F278200ECA60C /* SchemeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchemeHandler.h; sourceTree = "<group>"; };
+		05A6A8F11F9F278200ECA60C /* SchemeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchemeHandler.m; sourceTree = "<group>"; };
+		05A6A8F21F9F278200ECA60C /* UtilTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilTool.h; sourceTree = "<group>"; };
+		05A6A8F31F9F278200ECA60C /* UtilTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilTool.m; sourceTree = "<group>"; };
+		05A6A8F41F9F278200ECA60C /* VCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCManager.h; sourceTree = "<group>"; };
+		05A6A8F51F9F278200ECA60C /* VCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCManager.m; sourceTree = "<group>"; };
+		05A6A8F61F9F278200ECA60C /* WebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
+		05A6A8F71F9F278200ECA60C /* WebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
+		05A6A8FD1F9F29E800ECA60C /* UserAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAgent.h; sourceTree = "<group>"; };
+		05A6A8FE1F9F29E800ECA60C /* UserAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAgent.m; sourceTree = "<group>"; };
 		05D9C2221EFCFCC000F683B2 /* ThirdPart-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ThirdPart-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D9C2261EFCFCC100F683B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05D9C2281EFCFCC100F683B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +155,10 @@
 		05A6A8C51F9F238000ECA60C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				05A6A8DA1F9F245F00ECA60C /* CircleVC.h */,
+				05A6A8DB1F9F245F00ECA60C /* CircleVC.m */,
+				05A6A8DD1F9F247900ECA60C /* PersonVC.h */,
+				05A6A8DE1F9F247900ECA60C /* PersonVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,9 +173,32 @@
 		05A6A8D31F9F238000ECA60C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				05A6A8E01F9F252100ECA60C /* PersonHeader.h */,
+				05A6A8E11F9F252100ECA60C /* PersonHeader.m */,
+				05A6A8E31F9F255300ECA60C /* PersonNormalCell.h */,
+				05A6A8E41F9F255300ECA60C /* PersonNormalCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
+		};
+		05A6A8EC1F9F278200ECA60C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				05A6A8ED1F9F278200ECA60C /* MDUrl.h */,
+				05A6A8EE1F9F278200ECA60C /* MDUrl.m */,
+				05A6A8EF1F9F278200ECA60C /* SchemeDefine.h */,
+				05A6A8F01F9F278200ECA60C /* SchemeHandler.h */,
+				05A6A8F11F9F278200ECA60C /* SchemeHandler.m */,
+				05A6A8F21F9F278200ECA60C /* UtilTool.h */,
+				05A6A8F31F9F278200ECA60C /* UtilTool.m */,
+				05A6A8F41F9F278200ECA60C /* VCManager.h */,
+				05A6A8F51F9F278200ECA60C /* VCManager.m */,
+				05A6A8F61F9F278200ECA60C /* WebController.h */,
+				05A6A8F71F9F278200ECA60C /* WebController.m */,
+			);
+			name = Protocol;
+			path = "ThirdPart-test/Classes/Protocol";
+			sourceTree = SOURCE_ROOT;
 		};
 		05D9C2191EFCFCC000F683B2 = {
 			isa = PBXGroup;
@@ -189,6 +250,7 @@
 				05D9C2451EFD084400F683B2 /* Me */,
 				05A6A8C41F9F238000ECA60C /* Circle */,
 				05D9C2491EFD084400F683B2 /* Other */,
+				05A6A8EC1F9F278200ECA60C /* Protocol */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -212,6 +274,8 @@
 				05D9C2621EFD0B1000F683B2 /* MyTabBarVC.m */,
 				05D9C2641EFD0B9100F683B2 /* BaseNavigationVC.h */,
 				05D9C2651EFD0B9100F683B2 /* BaseNavigationVC.m */,
+				05A6A8E91F9F266600ECA60C /* BaseTableView.h */,
+				05A6A8EA1F9F266600ECA60C /* BaseTableView.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -363,6 +427,8 @@
 				05D9C2591EFD0A4900F683B2 /* MyTool.m */,
 				052992E51F147D22003488C2 /* AlertManager.h */,
 				052992E61F147D22003488C2 /* AlertManager.m */,
+				05A6A8FD1F9F29E800ECA60C /* UserAgent.h */,
+				05A6A8FE1F9F29E800ECA60C /* UserAgent.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -537,13 +603,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A6A8EB1F9F266600ECA60C /* BaseTableView.m in Sources */,
 				E6FD461C1F1BBF3F000A1772 /* BarrageVC.m in Sources */,
 				05D9C2571EFD0A1900F683B2 /* BaseViewController.m in Sources */,
+				05A6A8F91F9F278300ECA60C /* SchemeHandler.m in Sources */,
 				05D9C2661EFD0B9100F683B2 /* BaseNavigationVC.m in Sources */,
 				05D9C25D1EFD0A8400F683B2 /* HomeVC.m in Sources */,
+				05A6A8FF1F9F29E800ECA60C /* UserAgent.m in Sources */,
+				05A6A8DF1F9F247900ECA60C /* PersonVC.m in Sources */,
+				05A6A8F81F9F278300ECA60C /* MDUrl.m in Sources */,
 				054FD9EC1F0EBE6A00680CC8 /* ScaleScrollView.m in Sources */,
 				05D9C2601EFD0A9600F683B2 /* MeVC.m in Sources */,
+				05A6A8FB1F9F278300ECA60C /* VCManager.m in Sources */,
 				054FD9CE1F06741E00680CC8 /* UIView+MyFrame.m in Sources */,
+				05A6A8FC1F9F278300ECA60C /* WebController.m in Sources */,
 				E6FD461F1F1BC93A000A1772 /* REVC.m in Sources */,
 				E6FD46191F1BBF27000A1772 /* BarrageView.m in Sources */,
 				05D9C22A1EFCFCC100F683B2 /* AppDelegate.m in Sources */,
@@ -552,10 +625,14 @@
 				054FD9BB1F035B4F00680CC8 /* UIImage+RenderedImage.m in Sources */,
 				054FD9DD1F07945000680CC8 /* UIView+RectCorner.m in Sources */,
 				05D9C25A1EFD0A4900F683B2 /* MyTool.m in Sources */,
+				05A6A8FA1F9F278300ECA60C /* UtilTool.m in Sources */,
 				05D9C2631EFD0B1000F683B2 /* MyTabBarVC.m in Sources */,
+				05A6A8DC1F9F245F00ECA60C /* CircleVC.m in Sources */,
 				E6FD46221F1BC985000A1772 /* RERankingView.m in Sources */,
 				054FD9E91F0EBE2C00680CC8 /* OtherVC.m in Sources */,
 				0529A4FB1F2B398F00D2E53B /* HomeAnimateVC.m in Sources */,
+				05A6A8E51F9F255300ECA60C /* PersonNormalCell.m in Sources */,
+				05A6A8E21F9F252100ECA60C /* PersonHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
