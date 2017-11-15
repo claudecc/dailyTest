@@ -11,6 +11,6 @@
 @interface ScreenRecorder : NSObject
 
 + (instancetype)sharedInstance;
-- (void)startRecoder;
-
+- (void)startRecording;
+- (void)stopRecording;
 @end

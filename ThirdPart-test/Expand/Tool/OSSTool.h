@@ -10,4 +10,8 @@
 
 @interface OSSTool : NSObject
 
++ (instancetype)sharedInstance;
+
+- (void)uploadObjectWithUrl:(NSURL *)url;
+
 @end

@@ -99,23 +99,22 @@ OSSClient *client;
 }
 
 // 异步上传
-- (void)uploadObjectAsync {
+- (void)uploadObjectWithUrl:(NSURL *)url {
     OSSPutObjectRequest * put = [OSSPutObjectRequest new];
     
     // required fields
-    put.bucketName = @"android-test";
+    put.bucketName = @"ios-test";
     put.objectKey = @"file1m";
-    NSString * docDir = [self getDocumentDirectory];
-    put.uploadingFileURL = [NSURL fileURLWithPath:[docDir stringByAppendingPathComponent:@"file1m"]];
+    put.uploadingFileURL = url;
     
     // optional fields
-    put.uploadProgress = ^(int64_t bytesSent, int64_t totalByteSent, int64_t totalBytesExpectedToSend) {
-        NSLog(@"%lld, %lld, %lld", bytesSent, totalByteSent, totalBytesExpectedToSend);
-    };
-    put.contentType = @"";
-    put.contentMd5 = @"";
-    put.contentEncoding = @"";
-    put.contentDisposition = @"";
+//    put.uploadProgress = ^(int64_t bytesSent, int64_t totalByteSent, int64_t totalBytesExpectedToSend) {
+//        NSLog(@"%lld, %lld, %lld", bytesSent, totalByteSent, totalBytesExpectedToSend);
+//    };
+//    put.contentType = @"";
+//    put.contentMd5 = @"";
+//    put.contentEncoding = @"";
+//    put.contentDisposition = @"";
     
     OSSTask * putTask = [client putObject:put];
     

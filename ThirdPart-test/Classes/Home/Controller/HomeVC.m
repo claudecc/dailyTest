@@ -8,6 +8,7 @@
 
 #import "HomeVC.h"
 #import "UIImage+GIF.h"
+#import "ASScreenRecorder.h"
 
 @interface HomeVC ()<YYTextViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -40,12 +41,16 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"home_cell_id"];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = self.dataArray[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    if (indexPath.row == 3) {
+        [self screenRecording];
+        return;
+    }
     Class class = NSClassFromString(self.dataArray[indexPath.row]);
     if (!class) {
         return;
@@ -67,9 +72,13 @@
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[@"BarrageVC",@"REVC",@"HomeAnimateVC"];
+        _dataArray = @[@"BarrageVC",@"REVC",@"HomeAnimateVC",@"ReplayKit"];
     }
     return _dataArray;
+}
+
+- (void)screenRecording {
+    [[ASScreenRecorder sharedInstance] startRecording];
 }
 
 - (void)setupAnimation {

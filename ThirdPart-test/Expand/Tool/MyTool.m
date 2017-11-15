@@ -8,6 +8,9 @@
 
 #import "MyTool.h"
 #import <AdSupport/AdSupport.h>
+
+#define showtoast_view_tag 201710300
+
 @implementation MyTool
 
 + (float)getWidthWithStr:(NSString *)str font:(UIFont *)font {
@@ -18,13 +21,20 @@
     return label.size.width;
 }
 + (void)showToastWithStr:(NSString *)str{
-    if (!str||[str isEqualToString:@""]||[str isEqualToString:@"网络异常"]) {
+    if (!str || [MyTool getStringFromObj:str].length <= 0) {
         return;
     }
+    for (UIView *subview in [[UIApplication sharedApplication] keyWindow].subviews) {
+        if (subview.tag == showtoast_view_tag) {
+            [subview removeFromSuperview];
+        }
+    }
+    
     UIFont *font = [UIFont systemFontOfSize:13];
     CGSize strSize = [MyTool stringText:str sizeWithFont:font maxW:SCREEN_WIDTH-40];
     
     UILabel *toastVeiw = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, strSize.width+20, strSize.height+20)];
+    toastVeiw.tag = showtoast_view_tag;
     toastVeiw.textAlignment = NSTextAlignmentCenter;
     toastVeiw.clipsToBounds = YES;
     toastVeiw.numberOfLines = 0;

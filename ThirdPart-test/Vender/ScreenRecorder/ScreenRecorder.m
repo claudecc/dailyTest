@@ -60,6 +60,7 @@
 //开始录屏
 - (void)replayStartRecoder
 {
+    [MyTool showToastWithStr:@"开启录屏"];
     //将开启录屏功能的代码放在主线程执行
     dispatch_async(dispatch_get_main_queue(), ^{
         //这是录屏的类
@@ -84,7 +85,7 @@
                     DLog(@"正在录屏");
                     [MyTool showToastWithStr:@"正在录屏"];
                     weakSelf.isRecording = YES;
-                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         [weakSelf replayStopDecoder];
                     });
                 }
@@ -99,40 +100,28 @@
 {
     __weak typeof (self)weakSelf = self;
     [[RPScreenRecorder sharedRecorder] stopRecordingWithHandler:^(RPPreviewViewController *previewViewController, NSError *  error){
-        _RPPreview = previewViewController;
+//        _RPPreview = previewViewController;
         if (error) {
             NSLog(@"这里关闭有误%@",error.description);
+            [MyTool showToastWithStr:@"录屏关闭错误"];
         } else {
             DLog(@"录屏关闭");
-            [_RPPreview setPreviewControllerDelegate:self];
+            [MyTool showToastWithStr:@"录屏关闭"];
+            [previewViewController setPreviewControllerDelegate:self];
             weakSelf.isRecording = NO;
             //在结束录屏时显示预览画面
-            [weakSelf showVideoPreviewController:_RPPreview withAnimation:YES];
+            [self showPreviewVC:previewViewController];
+
         }
     }];
 }
 
-//显示视频预览页面,animation=是否要动画显示
-- (void)showVideoPreviewController:(RPPreviewViewController *)previewController withAnimation:(BOOL)animation {
+- (void)showPreviewVC:(RPPreviewViewController *)previewVC {
     UIViewController *curVC = [[VCManager shareVCManager] getTopViewController];
     __weak typeof (UIViewController*) weakVC = curVC;
     //UI需要放到主线程
     dispatch_async(dispatch_get_main_queue(), ^{
-        CGRect rect = previewController.view.frame;
-        if (animation) {
-            rect.origin.x += rect.size.width;
-            previewController.view.frame = rect;
-            rect.origin.x -= rect.size.width;
-            [UIView animateWithDuration:0.3 animations:^(){
-                previewController.view.frame = rect;
-            } completion:^(BOOL finished){
-            }];
-        } else {
-            previewController.view.frame = rect;
-        }
-        
-        [weakVC.view addSubview:previewController.view];
-        [weakVC addChildViewController:previewController];
+        [weakVC presentViewController:previewVC animated:YES completion:nil];
     });
 }
 
@@ -140,22 +129,7 @@
 - (void)hideVideoPreviewController:(RPPreviewViewController *)previewController withAnimation:(BOOL)animation {
     //UI需要放到主线程
     dispatch_async(dispatch_get_main_queue(), ^{
-        CGRect rect = previewController.view.frame;
-        if (animation) {
-            rect.origin.x += rect.size.width;
-            [UIView animateWithDuration:0.3 animations:^(){
-                previewController.view.frame = rect;
-            } completion:^(BOOL finished){
-                
-                //移除页面
-                [previewController.view removeFromSuperview];
-                [previewController removeFromParentViewController];
-            }];
-        } else {
-            //移除页面
-            [previewController.view removeFromSuperview];
-            [previewController removeFromParentViewController];
-        }
+        [previewController dismissViewControllerAnimated:YES completion:nil];
     });
 }
 
@@ -165,7 +139,7 @@
     if (isSave == 1) {
         //这个地方我添加了一个延时,我发现这样保存不到系统相册的情况好多了
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self hideVideoPreviewController:_RPPreview withAnimation:YES];
+            [self hideVideoPreviewController:previewController withAnimation:YES];
         });
         
         isSave = 0;
@@ -173,10 +147,7 @@
     {
         dispatch_async(dispatch_get_main_queue(), ^{
             UIAlertAction *queding = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                [self hideVideoPreviewController:_RPPreview withAnimation:YES];
-                //                dispatch_async(dispatch_get_main_queue(), ^{
-                //                                [weakSelf.RPPreview dismissViewControllerAnimated:YES completion:nil];
-                //                            });
+                [self hideVideoPreviewController:previewController withAnimation:YES];
                 isSave = 0;
             }];
             UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
@@ -216,9 +187,9 @@
 
 - (void)screenRecorder:(RPScreenRecorder *)screenRecorder didStopRecordingWithError:(NSError *)error previewViewController:(nullable RPPreviewViewController *)previewViewController
 {
-    [_RPPreview setPreviewControllerDelegate:self];
+    [previewViewController setPreviewControllerDelegate:self];
     self.isRecording = NO;
-    [self showVideoPreviewController:_RPPreview withAnimation:YES];
+    [self showPreviewVC:previewViewController];
 }
 
 - (BOOL)isHighVersion {

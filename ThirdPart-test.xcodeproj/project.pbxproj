@@ -34,6 +34,7 @@
 		05A6A8FB1F9F278300ECA60C /* VCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8F51F9F278200ECA60C /* VCManager.m */; };
 		05A6A8FC1F9F278300ECA60C /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8F71F9F278200ECA60C /* WebController.m */; };
 		05A6A8FF1F9F29E800ECA60C /* UserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6A8FE1F9F29E800ECA60C /* UserAgent.m */; };
+		05D47C101FBC534E0058A285 /* ASScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D47C0E1FBC534E0058A285 /* ASScreenRecorder.m */; };
 		05D9C2271EFCFCC100F683B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D9C2261EFCFCC100F683B2 /* main.m */; };
 		05D9C22A1EFCFCC100F683B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D9C2291EFCFCC100F683B2 /* AppDelegate.m */; };
 		05D9C2321EFCFCC200F683B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D9C2311EFCFCC200F683B2 /* Assets.xcassets */; };
@@ -100,6 +101,8 @@
 		05A6A8F71F9F278200ECA60C /* WebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
 		05A6A8FD1F9F29E800ECA60C /* UserAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserAgent.h; sourceTree = "<group>"; };
 		05A6A8FE1F9F29E800ECA60C /* UserAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserAgent.m; sourceTree = "<group>"; };
+		05D47C0E1FBC534E0058A285 /* ASScreenRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASScreenRecorder.m; sourceTree = "<group>"; };
+		05D47C0F1FBC534E0058A285 /* ASScreenRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASScreenRecorder.h; sourceTree = "<group>"; };
 		05D9C2221EFCFCC000F683B2 /* ThirdPart-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ThirdPart-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05D9C2261EFCFCC100F683B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05D9C2281EFCFCC100F683B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 		0543078A1FBC272F00C4FBE2 /* ScreenRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				05D47C0F1FBC534E0058A285 /* ASScreenRecorder.h */,
+				05D47C0E1FBC534E0058A285 /* ASScreenRecorder.m */,
 				0543078B1FBC272F00C4FBE2 /* ScreenRecorder.h */,
 				0543078C1FBC272F00C4FBE2 /* ScreenRecorder.m */,
 			);
@@ -643,6 +648,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D47C101FBC534E0058A285 /* ASScreenRecorder.m in Sources */,
 				05A6A8EB1F9F266600ECA60C /* BaseTableView.m in Sources */,
 				E6FD461C1F1BBF3F000A1772 /* BarrageVC.m in Sources */,
 				05D9C2571EFD0A1900F683B2 /* BaseViewController.m in Sources */,
