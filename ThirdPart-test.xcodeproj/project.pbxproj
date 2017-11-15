@@ -10,6 +10,11 @@
 		050D3B2D1F18D73900E0A9E1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050D3B2C1F18D73900E0A9E1 /* AdSupport.framework */; };
 		052992E71F147D22003488C2 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 052992E61F147D22003488C2 /* AlertManager.m */; };
 		0529A4FB1F2B398F00D2E53B /* HomeAnimateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529A4FA1F2B398F00D2E53B /* HomeAnimateVC.m */; };
+		0543078D1FBC272F00C4FBE2 /* ScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0543078C1FBC272F00C4FBE2 /* ScreenRecorder.m */; };
+		0543078F1FBC276700C4FBE2 /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0543078E1FBC276700C4FBE2 /* AliyunOSSiOS.framework */; };
+		054307921FBC278F00C4FBE2 /* OSSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 054307911FBC278F00C4FBE2 /* OSSTool.m */; };
+		054307941FBC283A00C4FBE2 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 054307931FBC283A00C4FBE2 /* libresolv.tbd */; };
+		054307961FBC284300C4FBE2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054307951FBC284300C4FBE2 /* SystemConfiguration.framework */; };
 		054FD9B61F033FA300680CC8 /* little_boy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 054FD9B51F033FA300680CC8 /* little_boy.gif */; };
 		054FD9B81F0352C300680CC8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 054FD9B71F0352C300680CC8 /* Default-568h@2x.png */; };
 		054FD9BB1F035B4F00680CC8 /* UIImage+RenderedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 054FD9BA1F035B4F00680CC8 /* UIImage+RenderedImage.m */; };
@@ -51,6 +56,14 @@
 		052992E61F147D22003488C2 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
 		0529A4F91F2B398F00D2E53B /* HomeAnimateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeAnimateVC.h; sourceTree = "<group>"; };
 		0529A4FA1F2B398F00D2E53B /* HomeAnimateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeAnimateVC.m; sourceTree = "<group>"; };
+		0543078B1FBC272F00C4FBE2 /* ScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenRecorder.h; sourceTree = "<group>"; };
+		0543078C1FBC272F00C4FBE2 /* ScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenRecorder.m; sourceTree = "<group>"; };
+		0543078E1FBC276700C4FBE2 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunOSSiOS.framework; sourceTree = "<group>"; };
+		054307901FBC278F00C4FBE2 /* OSSTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSTool.h; sourceTree = "<group>"; };
+		054307911FBC278F00C4FBE2 /* OSSTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSTool.m; sourceTree = "<group>"; };
+		054307931FBC283A00C4FBE2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		054307951FBC284300C4FBE2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		054307981FBC2D8A00C4FBE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		054FD9B51F033FA300680CC8 /* little_boy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = little_boy.gif; sourceTree = "<group>"; };
 		054FD9B71F0352C300680CC8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		054FD9B91F035B4F00680CC8 /* UIImage+RenderedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RenderedImage.h"; sourceTree = "<group>"; };
@@ -126,7 +139,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054307961FBC284300C4FBE2 /* SystemConfiguration.framework in Frameworks */,
+				054307941FBC283A00C4FBE2 /* libresolv.tbd in Frameworks */,
 				050D3B2D1F18D73900E0A9E1 /* AdSupport.framework in Frameworks */,
+				0543078F1FBC276700C4FBE2 /* AliyunOSSiOS.framework in Frameworks */,
 				CB4232B54C734B1508622ABA /* libPods-ThirdPart-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +150,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054307891FBC26E600C4FBE2 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				0543078E1FBC276700C4FBE2 /* AliyunOSSiOS.framework */,
+				0543078A1FBC272F00C4FBE2 /* ScreenRecorder */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		0543078A1FBC272F00C4FBE2 /* ScreenRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				0543078B1FBC272F00C4FBE2 /* ScreenRecorder.h */,
+				0543078C1FBC272F00C4FBE2 /* ScreenRecorder.m */,
+			);
+			path = ScreenRecorder;
+			sourceTree = "<group>";
+		};
 		05A6A8C31F9F227E00ECA60C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +258,7 @@
 				05D9C2681EFD153300F683B2 /* Base */,
 				05D9C23C1EFD084400F683B2 /* Classes */,
 				05D9C24D1EFD084400F683B2 /* Expand */,
+				054307891FBC26E600C4FBE2 /* Vender */,
 				05D9C2501EFD084400F683B2 /* Resource */,
 				05D9C2281EFCFCC100F683B2 /* AppDelegate.h */,
 				05D9C2291EFCFCC100F683B2 /* AppDelegate.m */,
@@ -429,6 +464,8 @@
 				052992E61F147D22003488C2 /* AlertManager.m */,
 				05A6A8FD1F9F29E800ECA60C /* UserAgent.h */,
 				05A6A8FE1F9F29E800ECA60C /* UserAgent.m */,
+				054307901FBC278F00C4FBE2 /* OSSTool.h */,
+				054307911FBC278F00C4FBE2 /* OSSTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -464,6 +501,9 @@
 		1A2FBE367BA8F392855DA1F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				054307981FBC2D8A00C4FBE2 /* UIKit.framework */,
+				054307951FBC284300C4FBE2 /* SystemConfiguration.framework */,
+				054307931FBC283A00C4FBE2 /* libresolv.tbd */,
 				050D3B2C1F18D73900E0A9E1 /* AdSupport.framework */,
 				B8FC9F8E64CD8B34D8DC968C /* libPods-ThirdPart-test.a */,
 			);
@@ -619,12 +659,14 @@
 				05A6A8FC1F9F278300ECA60C /* WebController.m in Sources */,
 				E6FD461F1F1BC93A000A1772 /* REVC.m in Sources */,
 				E6FD46191F1BBF27000A1772 /* BarrageView.m in Sources */,
+				0543078D1FBC272F00C4FBE2 /* ScreenRecorder.m in Sources */,
 				05D9C22A1EFCFCC100F683B2 /* AppDelegate.m in Sources */,
 				05D9C2271EFCFCC100F683B2 /* main.m in Sources */,
 				052992E71F147D22003488C2 /* AlertManager.m in Sources */,
 				054FD9BB1F035B4F00680CC8 /* UIImage+RenderedImage.m in Sources */,
 				054FD9DD1F07945000680CC8 /* UIView+RectCorner.m in Sources */,
 				05D9C25A1EFD0A4900F683B2 /* MyTool.m in Sources */,
+				054307921FBC278F00C4FBE2 /* OSSTool.m in Sources */,
 				05A6A8FA1F9F278300ECA60C /* UtilTool.m in Sources */,
 				05D9C2631EFD0B1000F683B2 /* MyTabBarVC.m in Sources */,
 				05A6A8DC1F9F245F00ECA60C /* CircleVC.m in Sources */,
@@ -738,6 +780,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 8YBVZL288W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdPart-test/Vender",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ThirdPart-test/PrefixHeader.pch";
 				INFOPLIST_FILE = "ThirdPart-test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -755,6 +801,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 8YBVZL288W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdPart-test/Vender",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ThirdPart-test/PrefixHeader.pch";
 				INFOPLIST_FILE = "ThirdPart-test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

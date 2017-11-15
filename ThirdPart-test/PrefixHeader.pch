@@ -21,6 +21,16 @@
 #import "YYImage.h"
 #import "UIView+MyFrame.h"
 #import "AlertManager.h"
+#import "VCManager.h"
+
+//debug
+#ifdef DEBUG
+#    define DLog(...) NSLog(__VA_ARGS__)
+#    define DEBUGMODE YES
+#else
+#    define DLog(...) /* */
+#    define DEBUGMODE NO
+#endif
 
 #endif
 
