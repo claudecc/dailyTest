@@ -72,7 +72,7 @@
 
 - (NSArray *)dataArray {
     if (!_dataArray) {
-        _dataArray = @[@"BarrageVC",@"REVC",@"HomeAnimateVC",@"ReplayKit"];
+        _dataArray = @[@"BarrageVC",@"REVC",@"HomeAnimateVC",@"ReplayKit",@"UITestVC"];
     }
     return _dataArray;
 }

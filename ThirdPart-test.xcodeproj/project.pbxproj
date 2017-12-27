@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		050D3B2D1F18D73900E0A9E1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050D3B2C1F18D73900E0A9E1 /* AdSupport.framework */; };
+		0517720B1FD9973E00AE9876 /* UITestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0517720A1FD9973E00AE9876 /* UITestVC.m */; };
 		052992E71F147D22003488C2 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 052992E61F147D22003488C2 /* AlertManager.m */; };
 		0529A4FB1F2B398F00D2E53B /* HomeAnimateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0529A4FA1F2B398F00D2E53B /* HomeAnimateVC.m */; };
 		0543078D1FBC272F00C4FBE2 /* ScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0543078C1FBC272F00C4FBE2 /* ScreenRecorder.m */; };
@@ -53,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		050D3B2C1F18D73900E0A9E1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		051772091FD9973E00AE9876 /* UITestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestVC.h; sourceTree = "<group>"; };
+		0517720A1FD9973E00AE9876 /* UITestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestVC.m; sourceTree = "<group>"; };
 		052992E51F147D22003488C2 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
 		052992E61F147D22003488C2 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
 		0529A4F91F2B398F00D2E53B /* HomeAnimateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeAnimateVC.h; sourceTree = "<group>"; };
@@ -355,6 +358,8 @@
 				E6FD461E1F1BC93A000A1772 /* REVC.m */,
 				0529A4F91F2B398F00D2E53B /* HomeAnimateVC.h */,
 				0529A4FA1F2B398F00D2E53B /* HomeAnimateVC.m */,
+				051772091FD9973E00AE9876 /* UITestVC.h */,
+				0517720A1FD9973E00AE9876 /* UITestVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -658,6 +663,7 @@
 				05A6A8FF1F9F29E800ECA60C /* UserAgent.m in Sources */,
 				05A6A8DF1F9F247900ECA60C /* PersonVC.m in Sources */,
 				05A6A8F81F9F278300ECA60C /* MDUrl.m in Sources */,
+				0517720B1FD9973E00AE9876 /* UITestVC.m in Sources */,
 				054FD9EC1F0EBE6A00680CC8 /* ScaleScrollView.m in Sources */,
 				05D9C2601EFD0A9600F683B2 /* MeVC.m in Sources */,
 				05A6A8FB1F9F278300ECA60C /* VCManager.m in Sources */,

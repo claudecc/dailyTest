@@ -66,7 +66,7 @@
         _pixelAppendSemaphore = dispatch_semaphore_create(1);
         
         NSString *path = NSSearchPathForDirectoriesInDomains(NSCachesDirectory,NSUserDomainMask,YES).firstObject;
-        path = [path stringByAppendingString:@"/corders/screenCapture.mp4"];
+        path = [path stringByAppendingString:@"/screenCapture.mp4"];
         self.videoURL = [NSURL fileURLWithPath:path];
     }
     return self;
